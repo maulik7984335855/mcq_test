@@ -9,7 +9,7 @@ const AppState = ({ children }) => {
   const getForm = async (payload) => {
     console.log("State Payload:", payload);
 
-    const res = await axios.post("http://localhost:4000/api/generate", {
+    const res = await axios.post("https://mcq-test-backend.onrender.com/api/generate", {
       topic: payload.topic,
       numberOfQuestions: payload.numberOfQuestions,
       difficulty: payload.difficulty,
